@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+    border-bottom: 1px;
+}
+
+.categories h3 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin: 0; 
+    line-height: 1; 
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title h2{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+}
+.recommandBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.recommandBar h4{
+    font-size: 1rem;
+}
+.dropdown{
+    margin-left: auto;
+}

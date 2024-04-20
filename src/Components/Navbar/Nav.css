@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* make space-between */
+    padding: 10px;
+    z-index: 999;
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+  }
+
+.nav-logo {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: .2em;
+    text-align: center; /* Center aligning the logo */
+}
+
+.nav-icons {
+    display: flex; /* to align icons horizontally */
+    align-items: center; /* Vertically center aligning icons */
+    margin-right: 5rem;
+    font-size: 1.2rem;
+}
+
+.nav-icons a {
+    margin-right: 18px; /* Adjust spacing as needed */
+    color: #494949; /* Moved color styling here */
+}
+
+/* .categories h3{
+    margin: 0;
+} */
