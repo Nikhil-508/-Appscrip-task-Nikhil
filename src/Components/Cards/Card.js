@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 const ProductCards = () => {
   const [item, setItem] = useState([]);
 
+  //using async fucntion and fetch method to get the fakestore API
   const getItem = async () => {
     try {
       const response = await fetch("https://fakestoreapi.com/products");
@@ -23,19 +24,21 @@ const ProductCards = () => {
   }, []);
 
   return (
-    <Row>
+    <Row className="justify-content-center">
       {item.map((product) => (
-        <Col md={4} key={product.id}>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={product.image} />
-            <Card.Body>
-              <Card.Title>{product.title}</Card.Title>
-              <Card.Text>
-                {product.description?product.description.slice(0,90):"More data about this news is not available right now"}
-                <FiHeart />
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <Col className=" my-3" key={product.id} md={4} lg={{ span: 4, offset: 1 }}> 
+          <div className='cardStyle'> 
+            <Card style={{ width: '13rem', marginBottom: '10px' }}>
+              <Card.Img variant="top" src={product.image} />
+              <Card.Body>
+                <Card.Title>{product.title}</Card.Title>
+                <Card.Text>
+                  {product.description ? product.description.slice(0, 90) : "More data about this news is not available right now"}
+                  <FiHeart />
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
         </Col>
       ))}
     </Row>

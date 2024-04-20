@@ -4,10 +4,11 @@
 .categories {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin-left: 25rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-left: 5rem;
+    border-color: aqua;
     border-bottom: 1px;
 }
 
@@ -25,20 +26,25 @@
     align-items: center;
     width: 100%;
 }
+.title p{
+    width: 50%;
+}
 
 .title h2{
     font-family: "Noto Sans", sans-serif;
     font-weight: 400px;
     font-style: normal;
+    width: fit-content;
 }
 .recommandBar{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.recommandBar h4{
+.recommandBar h4 {
     font-size: 1rem;
+    margin-left: 18rem;
 }
 .dropdown{
-    margin-left: auto;
+    margin-left: 25rem;
 }

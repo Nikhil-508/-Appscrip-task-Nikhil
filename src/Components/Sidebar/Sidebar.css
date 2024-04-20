@@ -1,8 +1,10 @@
 #sidebar {
+    margin-top: 15rem;
     width: 250px;
-    position: fixed;
+    position: relative;
+    z-index: 1;
     top: 0;
-    left: 0;
+    left: 0; 
     height: 100vh;
     background-color: #fff;
     display: flex;
